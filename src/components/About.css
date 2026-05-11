@@ -1,0 +1,81 @@
+.about-section {
+  padding: 4rem 0 6rem 0;
+}
+
+.about-text {
+  max-width: 900px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 3rem;
+}
+
+.about-tabs-container {
+  max-width: 800px;
+}
+
+.tabs-header {
+  display: flex;
+  background-color: #fff; /* White background for the tabs container as in design */
+  border-radius: 30px;
+  padding: 5px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.tab-btn {
+  flex: 1;
+  background: transparent;
+  color: #333;
+  padding: 0.8rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.tab-btn.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.tab-content {
+  min-height: 200px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.list-icon {
+  transform: rotate(45deg); /* To make the leaf look a bit like the icon in the design */
+}
+
+@media (max-width: 768px) {
+  .tabs-header {
+    flex-wrap: wrap;
+    background: transparent;
+  }
+  
+  .tab-btn {
+    background: #333;
+    color: #fff;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
+  .tab-btn.active {
+    background-color: var(--primary-color);
+  }
+}

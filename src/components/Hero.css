@@ -1,0 +1,143 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 80px;
+  background: linear-gradient(to bottom, #111 0%, #212121 100%);
+}
+
+.hero-bg-bars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  opacity: 0.05;
+  z-index: 0;
+  padding-left: 10%;
+}
+
+.hero-bg-bars .bar {
+  width: 40px;
+  height: 100%;
+  background: #fff;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 1;
+  flex: 1;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-content h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content .highlight {
+  color: var(--primary-color);
+}
+
+.hero-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+.resume-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(216, 44, 151, 0.3);
+  transition: all 0.3s;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 100%;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  opacity: 0.5;
+  /* Add a subtle drop shadow or gradient fade at bottom if needed */
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.hero-contact-bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 2rem 10%;
+  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  
+  .hero-content {
+    margin-bottom: 3rem;
+  }
+  
+  .hero-content p {
+    margin: 0 auto 2rem auto;
+  }
+  
+  .hero-image-wrapper {
+    justify-content: center;
+  }
+  
+  .hero-contact-bar {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
